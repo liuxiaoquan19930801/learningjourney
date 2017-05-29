@@ -1,2 +1,2 @@
 hello-world 
-≥ı ∂git°¢github
+first learning git&github
