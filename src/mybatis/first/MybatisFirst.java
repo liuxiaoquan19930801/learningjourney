@@ -15,7 +15,7 @@ public class MybatisFirst {
 	@Test
 	public void findUserById() {
 		
-		String resource = "/SqlMapConfig.xml";
+		String resource = "SqlMapConfig.xml";
 		InputStream inputStream = null;
 		try {
 			inputStream = Resources
