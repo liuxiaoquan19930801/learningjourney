@@ -29,8 +29,8 @@ public class MybatisFirst {
 			SqlSession sqlsession = sqlsessionfactory.openSession();
 			
 			// db
-			User user = sqlsession.selectOne("test.findUserById",1);
-			System.out.println(user);
+			User user = sqlsession.selectOne("test.findUserById",3);
+			System.out.println(user.toString());
 			
 			//สอทลืสิด
 			sqlsession.close();
