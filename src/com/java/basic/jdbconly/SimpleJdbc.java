@@ -1,4 +1,4 @@
-package jdbconly;
+package com.java.basic.jdbconly;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
