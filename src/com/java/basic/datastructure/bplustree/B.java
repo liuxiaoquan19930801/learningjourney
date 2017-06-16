@@ -1,4 +1,4 @@
-package com.java.basic.bplustree;
+package com.java.basic.datastructure.bplustree;
 
 public interface B {
 	   public Object get(Comparable key);   //²éÑ¯

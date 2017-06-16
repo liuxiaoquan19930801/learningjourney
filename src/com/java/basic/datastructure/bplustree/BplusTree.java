@@ -1,4 +1,4 @@
-package com.java.basic.bplustree;
+package com.java.basic.datastructure.bplustree;
 
 import java.util.Random;
 
@@ -73,6 +73,7 @@ public class BplusTree implements B {
 			for (int i = 0; i < 100; i++) {
 				int randomNumber = random.nextInt(1000);
 				tree.insertOrUpdate(randomNumber, randomNumber);
+				//System.out.println(tree.toString());
 			}
 
 			for (int i = 0; i < 100; i++) {

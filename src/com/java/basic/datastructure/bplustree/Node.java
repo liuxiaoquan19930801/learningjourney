@@ -1,4 +1,4 @@
-package com.java.basic.bplustree;
+package com.java.basic.datastructure.bplustree;
 
 import java.util.AbstractMap.SimpleEntry;  
 import java.util.ArrayList;   
@@ -42,7 +42,8 @@ public class Node {
        this.isRoot = isRoot;   
    }  
      
-   public Object get(Comparable key) {  
+   @SuppressWarnings("unchecked")
+public Object get(Comparable key) {  
          
        //如果是叶子节点  
        if (isLeaf) {  
