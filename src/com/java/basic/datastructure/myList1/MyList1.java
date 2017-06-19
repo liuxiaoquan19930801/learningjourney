@@ -1,10 +1,8 @@
 package com.java.basic.datastructure.myList1;
 
-import java.util.Iterator;
-
 import com.java.basic.datastructure.node.Node;
 
-public class MyList1 implements Iterator<Object>{
+public class MyList1 {
 
 	int size = 0;
 	Node headNode = null;
@@ -108,26 +106,6 @@ public class MyList1 implements Iterator<Object>{
 			}
 		}
 		return this.tmpNode;
-	}
-	
-	
-	@Override
-	public boolean hasNext() {
-		// TODO Auto-generated method stub
-		
-		return true;
-	}
-
-	@Override
-	public Object next() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void remove() {
-		// TODO Auto-generated method stub
-		
 	}
 	
 	public String toString(){
