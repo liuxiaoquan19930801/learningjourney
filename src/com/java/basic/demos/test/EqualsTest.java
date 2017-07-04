@@ -29,7 +29,7 @@ public class EqualsTest {
 	public int getCount() {
 		return count;
 	}
-
+	
 	public boolean equals(Object obj) {
 		if (this == obj) {
 			return true;
