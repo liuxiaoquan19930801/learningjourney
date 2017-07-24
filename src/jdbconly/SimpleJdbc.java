@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class SimpleJdbc {
 
 	public static void main(String [] args){
-	String url = "jdbc:mysql://localhost:3306/test";
+	String url = "jdbc:mysql://localhost:3306/CarPractice";
 	String DriverManagerString ="com.mysql.jdbc.Driver";
 	String username = "root";
 	String password = "root";

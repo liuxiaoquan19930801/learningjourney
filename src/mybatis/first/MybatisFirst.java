@@ -32,7 +32,7 @@ public class MybatisFirst {
 			User user = sqlsession.selectOne("test.findUserById",3);
 			System.out.println(user.toString());
 			
-			//สอทลืสิด
+			//close sqlsession
 			sqlsession.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
