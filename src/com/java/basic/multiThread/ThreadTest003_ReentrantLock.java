@@ -17,6 +17,7 @@ public class ThreadTest003_ReentrantLock implements Runnable{
 	@Override
 	public void run(){
 		rlock.lock();
+		rlock.lock();
 		for(int i=0;i<3;i++){
 			this.fix(i);
 			try{
@@ -27,7 +28,10 @@ public class ThreadTest003_ReentrantLock implements Runnable{
 			System.out.println(Thread.currentThread().getName() + "当前foo对象的x值："
 					+ this.foo.getX());
 		}
+		
 		rlock.unlock();
+		rlock.unlock();
+		
 	}
 	/**
 	 * @param args
