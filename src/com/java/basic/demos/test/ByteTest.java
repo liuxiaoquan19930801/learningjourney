@@ -1,5 +1,7 @@
 package com.java.basic.demos.test;
 
+import org.junit.Test;
+
 public class ByteTest {
 
 	/**
@@ -23,6 +25,29 @@ public class ByteTest {
         System.out.println(h ^ (h >>>  6));
         System.out.println(h + (h <<   2) + (h << 14));
         System.out.println(h ^ (h >>> 16));
+	}
+	
+	@Test
+	public void addSelfTest(){
+		int x =0;
+		switch (++x) {
+		case 0:	System.out.println(x);++x;System.out.println(x);
+		case 1:	System.out.println(x);++x;System.out.println(x);
+		case 2:	System.out.println(x);++x;System.out.println(x);
+		}
+	}
+	
+	@Test
+	public void ReSortTest(){
+		System.out.println(f(5));
+		
+	}
+	
+	public int f(int n){
+		if(n==1){return 0;}
+		if(n==2) {return 1;}
+		
+		return (n-1)*(f(n-1)+f(n-2));
 	}
 
 }
