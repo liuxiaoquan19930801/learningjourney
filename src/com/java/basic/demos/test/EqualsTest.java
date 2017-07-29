@@ -1,6 +1,6 @@
 package com.java.basic.demos.test;
 /**
- * 此代码模拟实现了equals方法来比对两个对象是否等价。
+ *
  * @author liuxq
  *
  */

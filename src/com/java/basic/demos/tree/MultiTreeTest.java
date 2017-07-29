@@ -12,7 +12,6 @@ public class MultiTreeTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//按图构造多叉树
 		Node treeRootA = new Node("A");
 		Node nodeB = new Node("B");
 		Node nodeD = new Node("D");

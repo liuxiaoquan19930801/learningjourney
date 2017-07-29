@@ -7,7 +7,6 @@ public class MultiTree {
 
 	private String from;
 	private String to;
-	//从根节点到达目的节点的路径位置记录在MyList中
 	private MyList1 fromPath = new MyList1();
 	private MyList1 toPath = new MyList1();
 	private boolean flag = false;

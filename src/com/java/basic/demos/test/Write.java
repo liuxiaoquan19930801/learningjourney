@@ -51,17 +51,12 @@ public class Write {
 	public void cutBigFile(String sourceFile,String targetPath,int fileCount) throws IOException{
 		FileReader sourcefile = new FileReader(sourceFile);
 		BufferedReader reader = new BufferedReader(sourcefile);
-		//每个文件的大小\已知目标1亿行
 		int rowsTotal = 100000000;
-		//创建字节数组
 		//byte[] bytearr = new byte[50];
-		//输出文件路径和文件名
-		
 		
 		String str;
 		for(int i=1;i<fileCount+1;i++){
 			String filename = "randomFiles" + i + ".txt";
-			//每个文件多少行
 			BufferedWriter desfile = new BufferedWriter(new FileWriter(targetPath + filename));
 			for(int j=0;j<rowsTotal/fileCount;j++){
 				if(!(str = reader.readLine()).equals("")){

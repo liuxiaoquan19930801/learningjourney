@@ -28,7 +28,7 @@ public class HashMapTest {
 	
 	public void getFullHashMapKeys(HashMap<String,Integer> ha){
 		Set<String> keys = ha.keySet();
-		System.out.println("hashmap×Ü´óÐ¡£º" + keys.size());
+		System.out.println("hashmap" + keys.size());
 	}
 	
 	public void getKeysAndTimes(){
