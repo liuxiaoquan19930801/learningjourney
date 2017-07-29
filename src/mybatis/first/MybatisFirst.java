@@ -1,14 +1,13 @@
 package mybatis.first;
 
-import java.io.InputStream;
-
 import mybatis.po.User;
-
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
+
+import java.io.InputStream;
 
 public class MybatisFirst {
 
@@ -32,7 +31,6 @@ public class MybatisFirst {
 			User user = sqlsession.selectOne("test.findUserById",3);
 			System.out.println(user.toString());
 			
-			//ÊÍ·Å×ÊÔ´
 			sqlsession.close();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
