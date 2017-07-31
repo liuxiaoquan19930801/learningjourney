@@ -7,15 +7,18 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
+import java.io.File;
 import java.io.InputStream;
 
 public class MybatisFirst {
 
 	@Test
 	public void findUserById() {
-		
-		String resource = "SqlMapConfig.xml";
+
+		String resource = "config/SqlMapConfig.xml";
 		InputStream inputStream = null;
+		File file = new File(resource);
+		System.out.println(file.exists());
 		try {
 			inputStream = Resources
 					.getResourceAsStream(resource);
