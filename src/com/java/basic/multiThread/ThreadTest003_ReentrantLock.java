@@ -11,9 +11,6 @@ public class ThreadTest003_ReentrantLock implements Runnable{
 		return foo.fix(y);
 	}
 
-	/*此方法不使用synchronized关键字修饰， 采用ReentrantLock锁机制，
-	 * 因此处三次调用fix方法，不能把锁加在fix方法上。
-	 */
 	@Override
 	public void run(){
 		rlock.lock();
@@ -25,7 +22,7 @@ public class ThreadTest003_ReentrantLock implements Runnable{
 			}catch(Exception e){
 				System.out.println(e);
 			}
-			System.out.println(Thread.currentThread().getName() + "当前foo对象的x值："
+			System.out.println(Thread.currentThread().getName() + "锟斤拷前foo锟斤拷锟斤拷锟絰值锟斤拷"
 					+ this.foo.getX());
 		}
 		
@@ -48,7 +45,6 @@ public class ThreadTest003_ReentrantLock implements Runnable{
 
 }
 
-//一个java文件可以有多个class类，但只允许有一个public class
 class Fooo{
 	private int x = 100;
 	

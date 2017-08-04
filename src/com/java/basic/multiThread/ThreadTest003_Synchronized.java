@@ -8,11 +8,6 @@ public class ThreadTest003_Synchronized implements Runnable{
 		return foo.fix(y);
 	}
 	
-	/*此方法若不加synchronized关键字修饰， ta\tb线程则随意调用该方法，
-	 * 导致每次结果都可能不同.
-	 * 修饰之后，保证了同步块代码每次只有一个进程在访问。
-	 * 多次执行的结果都是一样的。
-	 */
 	@Override
 	public synchronized void run(){
 		for(int i=0;i<3;i++){
@@ -22,7 +17,7 @@ public class ThreadTest003_Synchronized implements Runnable{
 			}catch(Exception e){
 				System.out.println(e);
 			}
-			System.out.println(Thread.currentThread().getName() + "当前foo对象的x值："
+			System.out.println(Thread.currentThread().getName() + "锟斤拷前foo锟斤拷锟斤拷锟絰值锟斤拷"
 					+ this.foo.getX());
 		}
 	}
@@ -41,7 +36,6 @@ public class ThreadTest003_Synchronized implements Runnable{
 
 }
 
-//一个java文件可以有多个class类，但只允许有一个public class
 class Foo{
 	private int x = 100;
 	

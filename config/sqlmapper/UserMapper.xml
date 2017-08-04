@@ -3,6 +3,27 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace='"">
+<mapper namespace="mybatis.mapper.UserMapper">
+    <select id="findUserById" parameterType="int" resultType="mybatis.po.User">
+        select * from person where id = #{id}
+    </select>
 
+    <select id="findUserByName" parameterType="java.lang.String" resultType="mybatis.po.User">
+        select * from person where username like '%${value}%'
+    </select>
+
+    <insert id="insertUser" parameterType="mybatis.po.User">
+        <selectKey keyProperty="id" order="AFTER" resultType="int">
+            select LAST_INSERT_ID()
+        </selectKey>
+        insert into person(id,username,birthday,sex,address) values(#{id},#{username},#{birthday},#{sex},#{address})
+    </insert>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from person where id=#{id}
+    </delete>
+
+    <update id="updateUser" parameterType="mybatis.po.User">
+        update person set username=#{username} where id=#{id}
+    </update>
 </mapper>
