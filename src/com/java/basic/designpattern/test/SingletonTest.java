@@ -8,7 +8,7 @@ public class SingletonTest {
 
 	@Test
 	public void SingletonTest1(){
-		//饿汉模式
+	//楗挎眽妯″紡
 		Singleton1 sl1 = Singleton1.getInstance();
 		Singleton1 sl2 = Singleton1.getInstance();
 		System.out.println(sl1 == sl2);
@@ -16,7 +16,7 @@ public class SingletonTest {
 	
 	@Test
 	public void SingletonTest2(){
-		//懒汉模式
+	//鎳掓眽妯″紡
 		Singleton2 sl3 = Singleton2.getInstance();
 		Singleton2 sl4 = Singleton2.getInstance();
 		System.out.println(sl3 == sl4);
