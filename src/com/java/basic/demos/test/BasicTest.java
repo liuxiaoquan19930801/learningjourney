@@ -2,6 +2,8 @@ package com.java.basic.demos.test;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 /**
  * 各种基础知识测试
  */
@@ -35,5 +37,11 @@ public class BasicTest {
 		System.out.println(0.3*10 == 3);
 		System.out.println("abc"== new String("abc").toString());
 	}
+	
+	@Test
+    public void referenceTest(){
+        ArrayList arrayList = new ArrayList();
+        
+    }
 	
 }
