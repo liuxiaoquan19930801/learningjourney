@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 
 public class Client {
 	
-	public static void main(String[] args) throws UnknownHostException, IOException{
+	public static void main(String[] args) throws IOException{
 		Socket client = new Socket("127.0.0.1",20006);
 		client.setSoTimeout(10000);
 		
@@ -21,7 +21,7 @@ public class Client {
 		
 		boolean flag = true;
 		while(flag){
-			System.out.print(" ‰»Î–≈œ¢:");
+			System.out.print("ËæìÂÖ•‰ø°ÊÅØ:");
 			String str = input.readLine();
 			out.println(str);
 			

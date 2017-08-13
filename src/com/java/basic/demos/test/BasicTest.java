@@ -41,6 +41,13 @@ public class BasicTest {
 	@Test
     public void referenceTest(){
         ArrayList arrayList = new ArrayList();
+        Integer integer = new Integer(1);
+        arrayList.add(integer);
+        System.out.println(integer);
+        System.out.println(arrayList);
+        integer = null;
+        System.out.println(integer);
+        System.out.println(arrayList);
         
     }
 	
