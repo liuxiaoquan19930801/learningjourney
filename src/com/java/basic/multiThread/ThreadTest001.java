@@ -1,5 +1,7 @@
 package com.java.basic.multiThread;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class ThreadTest001 extends Thread {
 	
 	public ThreadTest001(String string)
@@ -20,6 +22,7 @@ public class ThreadTest001 extends Thread {
 	}
 	
 	public static void main(String[] args) throws InterruptedException {
+	 
 		ThreadTest001 a = new ThreadTest001("Tom");
         ThreadTest001 c = new ThreadTest001("Henry");
         ThreadTest001 d = new ThreadTest001("Fuck");
@@ -31,6 +34,7 @@ public class ThreadTest001 extends Thread {
 		b.start();
         c.start();
         d.start();
+        
 	}
 	
 }
