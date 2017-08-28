@@ -48,7 +48,12 @@ public class BasicTest {
         integer = null;
         System.out.println(integer);
         System.out.println(arrayList);
-        
+    }
+    
+    @Test
+    public void substringTest(){
+        String s = "abcd";
+        System.out.println(s.substring(2));
     }
 	
 }
