@@ -9,7 +9,10 @@ public class LambdaTest002 {
 
     @Test
     public void Test01(){
-        Runnable r1 = () -> System.out.println("Runnable");
+        Runnable r1 = () -> {
+            System.out.println("Runnable1");
+            System.out.println("Runnable2");
+        };
         r1.run();
     }
 

@@ -1,6 +1,6 @@
 package com.java.basic.designpattern.singleton;
 /**
- * 单例模式：饿汉模式
+ * 楗挎眽妯″紡
  * @author Administrator
  *
  */
